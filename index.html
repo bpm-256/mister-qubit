@@ -38,17 +38,24 @@
       margin: 2px 0;
     }
 
-    .grid {
+    .grid-container {
+      max-width: 1154px;
+      margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 10px;
-      justify-items: center;
+      grid-template-columns: repeat(10, 1fr);
+      justify-content: space-between;
+      column-gap: 0;
+      padding: 0 1px; /* по 1px от стен */
+      row-gap: 10px;
     }
 
+
     .item {
-      width: 100px;
+      width: 100%;
+      max-width: 100px;
       text-align: center;
     }
+
 
     .caption {
       margin-top: 5px;
@@ -66,22 +73,24 @@
     }
 
     img {
-      width: 100px;
-      height: auto;
-      display: block;
+     width: 100%;
+     max-width: 100px;
+     display: block;
     }
+
   </style>
-</head>
+  </head>
 <body>
 
   <div class="title-block">
     <div class="line1">Complete metamorphosis.</div>
     <div class="line2">Part 1.</div>
     <div class="line3">Mister Qubit.</div>
-  
   </div>
 
-  <div class="grid">
+  <div class="grid-container">
+
+
 <div class="item">
   <div class="img-border">
     <img src="images/0001.png" alt="1">
